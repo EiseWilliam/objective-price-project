@@ -5,22 +5,10 @@ from pydantic import BaseModel
 from fastapi import Depends, HTTPException, status
 from bson.objectid import ObjectId
 
-from app.db.db import user_entity
-from app.db.database import User
+from db.db import user_entity
+from db.database import User
 
-from app.config import settings
-
-class Settings(BaseModel):
-    authjwt_algorithm: str = settings.JWT_ALGORITHM
-    authjwt_decode_algorithms: List[str] = [settings.JWT_ALGORITHM]
-    authjwt_token_location: set = {'cookies', 'headers'}
-    authjwt_access_cookie_key: str = 'access_token'
-    authjwt_refresh_cookie_key: str = 'refresh_token'
-    authjwt_cookie_csrf_protect: bool = False
-    authjwt_public_key: str = base64.b64decode(
-        settings.JWT_PUBLIC_KEY).decode('utf-8')
-    authjwt_private_key: str = base64.b64decode(
-        settings.JWT_PRIVATE_KEY).decode('utf-8')
+from config import settings
 
 
 

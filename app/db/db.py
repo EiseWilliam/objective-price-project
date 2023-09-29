@@ -1,5 +1,5 @@
 from bson.objectid import ObjectId
-from app.db.database import User, db
+from db.database import User, db
 
 collection1 = User
 

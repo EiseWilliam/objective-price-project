@@ -4,12 +4,12 @@ from bson.objectid import ObjectId
 from fastapi import APIRouter, Response, status, Depends, HTTPException, Body
 
 # from app.auth import oauth2
-from app.db.database import User
-from app.db.db import user_entity, user_response, userListEntity, find_user
-from app.models.schemas import UserResponse, CreateUserSchema, LoginUserSchema
-from app.utils.utils import hash_password, verify_password, create_access_token, create_refresh_token, get_current_user
+from db.database import User
+from db.db import user_entity, user_response, userListEntity, find_user
+from models.schemas import UserResponse, CreateUserSchema, LoginUserSchema
+from utils.utils import hash_password, verify_password, create_access_token, create_refresh_token, get_current_user
 # from app.auth import oauth2
-from app.config import settings
+from config import settings
 
 
 

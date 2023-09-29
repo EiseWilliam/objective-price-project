@@ -66,9 +66,7 @@ async def create_collection(collection_name: Annotated[str | None, "collection_n
 
 # start uvicorn server
 if __name__ == "__main__":
-    uvicorn.run("server.main:app", host="localhost", port=8000, reload=True)
-    import pdb
-    pdb.set_trace()
+    uvicorn.run(app = "main:app", port=8000, reload=True)
 
 
 

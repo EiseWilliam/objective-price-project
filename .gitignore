@@ -1,7 +1,8 @@
-# ignore .env ,docker files, and .sh
-
+# ignore .env ,docker files,vscode settings and .sh
+.gitignore
 .env
 Dockerfile
 docker-compose.yml
+.vscode
 *.sh
 ``` 
