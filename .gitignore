@@ -1,0 +1,7 @@
+# ignore .env ,docker files, and .sh
+
+.env
+Dockerfile
+docker-compose.yml
+*.sh
+``` 

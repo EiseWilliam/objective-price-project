@@ -1,0 +1,62 @@
+{
+  "users": {
+    "1": {
+      "_id": "1",
+      "username": "john.doe",
+      "email": "john.doe@example.com",
+      "password": "password123"
+    },
+    "2": {
+      "_id": "2",
+      "username": "jane.doe",
+      "email": "jane.doe@example.com",
+      "password": "password123"
+    }
+  },
+  "searchHistory": {
+    "1": [
+      {
+        "_id": "3",
+        "userId": "1",
+        "datetime": "2023-09-29T02:39:03.000Z",
+        "itemName": "TV",
+        "prices": [
+          { "storeName": "Amazon", "price": 499 },
+          { "storeName": "Walmart", "price": 509 }
+        ]
+      },
+      {
+        "_id": "4",
+        "userId": "1",
+        "datetime": "2023-09-29T02:40:03.000Z",
+        "itemName": "Laptop",
+        "prices": [
+          { "storeName": "Best Buy", "price": 999 },
+          { "storeName": "Target", "price": 1049 }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "_id": "5",
+        "userId": "2",
+        "datetime": "2023-09-29T02:39:03.000Z",
+        "itemName": "Dress",
+        "prices": [
+          { "storeName": "Macy's", "price": 49.99 },
+          { "storeName": "Nordstrom", "price": 59.99 }
+        ]
+      },
+      {
+        "_id": "6",
+        "userId": "2",
+        "datetime": "2023-09-29T02:40:03.000Z",
+        "itemName": "Shoes",
+        "prices": [
+          { "storeName": "Nike", "price": 99.99 },
+          { "storeName": "Adidas", "price": 109.99 }
+        ]
+      }
+    ]
+  }
+}
