@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "_id": "ObjectId()",
+      "username": "String",
+      "email": "String",
+      "password": "String",
+      "searchHistory": [
+        {
+          "datetime": "Date",
+          "itemName": "String",
+          "averagePrice": "Number",
+          "stores": [
+            {
+              "store1": "String",
+              "prices": ["Number", "Number", "Number"]
+            },
+            {
+              "store2": "String",
+              "prices": ["Number", "Number", "Number"]
+            },
+            {
+              "store2": "String",
+              "prices": ["Number", "Number", "Number"]
+            }
+          ]
+        },
+        {
+          "datetime": "Date",
+          "itemName": "String",
+          "averagePrice": "Number",
+          "stores": [
+            {
+                "store1": "String",
+                "prices": ["Number", "Number", "Number"]
+              },
+              {
+                "store2": "String",
+                "prices": ["Number", "Number", "Number"]
+              },
+              {
+                "store2": "String",
+                "prices": ["Number", "Number", "Number"]
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+{
+    "_id": ObjectId(),
+    "userId": ObjectId(),
+    "datetime": Date,
+    "itemName": String,
+    "prices": [
+      {
+        "storeName": String,
+        "price": Number
+      }
+    ]
+  }
+  
